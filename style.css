@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #302f2f;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #1c1c1c;
+    position: sticky;
+    height: 100px;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    color: yellow;
+    font-size: 35px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    background-color: yellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.hero {
+    background-image: url('./images/01.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    color: yellow;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.hero-content .btn-hero {
+    background-color: yellow;
+    color: #1c1c1c;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.best-sellers .dishes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+.dishes .dish {
+    max-width: 300px;
+    
+}
+
+.special .special-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.special .special-text {
+    text-align: left;
+}
+
+.statistics .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.statistics .stat-item {
+    text-align: center;
+}
+
+.subscription form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscription input {
+    padding: 10px;
+    width: 300px;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+footer .social-media a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .dishes, .special .special-content, .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+}
